@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sadiqa's Little Wonders</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      padding-top: 60px;
+      background: #f8f9fa;
+    }
+    .navbar {
+      background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    }
+    .navbar-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+    }
+    .carousel-item img {
+      filter: brightness(70%);
+      height: 400px;
+      object-fit: cover;
+    }
+    .carousel-caption {
+      bottom: 20%;
+      animation: fadeInUp 1s ease-out;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .card {
+      border: none;
+      border-radius: 1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .card-img-top {
+      height: 300px;
+      object-fit: cover;
+    }
+    .card-footer {
+      background: transparent;
+      border-top: none;
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #ff7e5f;
+      padding-top: 1rem;
+    }
+    #about {
+      background: #ffffff;
+    }
+    footer {
+      background: #343a40;
+      color: #adb5bd;
+      padding: 3rem 0;
+    }
+    footer a {
+      color: #ff7e5f;
+      transition: color 0.3s;
+    }
+    footer a:hover {
+      color: #feb47b;
+    }
+    .contact-info i {
+      margin-right: 0.5rem;
+      color: #ff7e5f;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sadiqa's Little Wonders</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://res.cloudinary.com/dncwuvhyb/image/upload/v1746192941/sadiqaLittleWonderimgB_hxbrsi.jpg" alt="Store Image 1" width="100%" height='100%'>
+          <div class="carousel-caption text-start">
+            <h2 class="display-4">Discover Unique Finds</h2>
+            <p>Handmade treasures just for you.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://res.cloudinary.com/dncwuvhyb/image/upload/v1746192797/sadiqaLittleWonderImgA_mcemnq.jpg" alt="Store Image 2" width="100%" height='100%'>
+          <div class="carousel-caption text-end">
+            <h2 class="display-4">Quality & Affordability</h2>
+            <p>Explore our latest collections.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Product Cards -->
+    <div class="container my-5">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="https://res.cloudinary.com/dncwuvhyb/image/upload/v1746192797/sadiqaLittleWonderImgA_mcemnq.jpg" class="card-img-top" alt="Handmade Ceramic Mug">
+            <div class="card-body text-center">
+              <h5 class="card-title">Earings holder</h5>
+              <p class="card-text">A beautiful, artisan-crafted Earing holder.</p>
+            </div>
+            <div class="card-footer">
+              30rs
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <span class="position-absolute top-0 start-0 badge bg-warning m-3 text-dark">New</span>
+            <img src="https://res.cloudinary.com/dncwuvhyb/image/upload/v1746192941/sadiqaLittleWonderimgB_hxbrsi.jpg" class="card-img-top" alt="Beaded Bracelet">
+            <div class="card-body text-center">
+              <h5 class="card-title">tissue Paper holder</h5>
+              <p class="card-text">Stylish tissue paper holder made with creativity.</p>
+            </div>
+            <div class="card-footer">
+              30rs
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4" style="font-family: 'Playfair Display', serif;">About Us</h2>
+      <p>Welcome to <strong>Sadiqa's Little Wonders</strong>! We curate unique, handcrafted items to bring you quality products at great prices. Our mission is to delighting our customers with charming, one-of-a-kind finds.</p>
+     <p> we also make products on demand as per our customers needs <p>
+     <p> To order any of the items please contact us on the number available in the footer <p>
+    </div>
+  </section>
+
+    <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+           <p><i class="fas fa-phone-alt"></i> +91 8779404127</p>
+      <small>&copy; 2025 Sadiqa's Little Wonders. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
